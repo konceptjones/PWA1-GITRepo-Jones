@@ -14,26 +14,26 @@
     console.log("FIGHT!!!");
 
     //player name
-    var playerOneName = "Spiderman";
-    var playerTwoName = "Batman";
+    var playerOneName = "Spiderman";   //Name of fighter one "Spiderman"
+    var playerTwoName = "Batman";     //Name of fighter two "batman"
 
     //player damage
-    var player1Damage = 20;
-    var player2Damage = 20;
+    var player1Damage = 20;   //player 1 damage
+    var player2Damage = 20;   //player 2 damage
 
     //player health
-    var playerOneHealth = 100;
-    var playerTwoHealth = 100;
+    var playerOneHealth = 100;  //Player one starting health "100%"
+    var playerTwoHealth = 100;  //Player two starting health "100%"
 
     //initiate round
     var round=0;
 
     function fight(){
-        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);
+        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);  //start of fight input plyer name
         for (var i = 0; i < 10; i++)
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
-            var minDamage1 = player1Damage * .5;
+            var minDamage1 = player1Damage * .5;   //
             var minDamage2 = player2Damage * .5;
             var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1);
             var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2);
