@@ -39,7 +39,7 @@
     };
     
     // Finds search matches
-    var search = function(query){ //fix error: added opeing curly bracket
+    var search = function(query){   //fix error: added opening curly bracket
         
         // split the user's search query string into an array
         var queryArray = query.join(" ");
