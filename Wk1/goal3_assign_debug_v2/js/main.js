@@ -23,12 +23,12 @@
             query = query.substring(1, query.length); //search result
         };
         while(query.charAt(query.length-1) === ""){
-            query = query.substring(0, query.length-1); //
+            query = query.substring(0, query.length-1); //while loop to run search query
         };  //fix error: added closed curly brackets
         
         // Check search length, must have 3 characters
         if(query.length < 3){ //validation for set amount of characters
-            alert("Your search query is too small, try again.");
+            alert("Your search query is too small, try again."); //alert user if search parameters are too small
             
             // (DO NOT FIX THE LINE DIRECTLY BELOW)
             searchInput.focus();
@@ -92,13 +92,13 @@
     var showMatches = function(results){
         
         // THE NEXT 4 LINES ARE CORRECT.
-        var html = '<p>Results</p>', 
+        var html = '<p>Results</p>', //display results 
             title, 
             url
         ;
         
         // loop through all the results search() function
-        for(var i=0, j=results.length; i<j; i++){
+        for(var i=0, j=results.length; i<j; i++){ //goes through all the results display
         
             // title of video ends with pipe
             // pull the title's string using index numbers
