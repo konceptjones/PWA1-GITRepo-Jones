@@ -25,7 +25,7 @@
         };
         while(query.charAt(query.length-1) === ""){
             query = query.substring(0, query.length-1); //
-        ;
+        }; //fix error: added curly bracket
         
         // Check search length, must have 3 characters
         if(query.length < 3){ //validation for set amount of characters
@@ -67,8 +67,8 @@
                 if(compare !== -1){
                     results.push(db[i]);
                 };
-            ;
-        ;
+            }; //fix error: added curly bracket
+        }; //fix error: added curly bracket
         
         results.sort();
         
@@ -119,11 +119,11 @@
     // THE LINE DIRECTLY BELOW IS CORRECT
     document.forms[0].onsubmit = function(){
         var query = searchInput.value;
-        validqte(query);
+        validate(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
         return false;
-    ;
+    }; //fix error: added curly bracket
 
 })();
