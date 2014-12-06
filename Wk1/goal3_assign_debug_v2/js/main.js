@@ -6,7 +6,6 @@
  */
 
 
-
 // Create privatized scope using a self-executing function
 (function(){
     
@@ -25,11 +24,11 @@
         };
         while(query.charAt(query.length-1) === ""){
             query = query.substring(0, query.length-1); //
-        }; //fix error: added curly bracket
+        };  //fix error: added closed curly brackets
         
         // Check search length, must have 3 characters
         if(query.length < 3){ //validation for set amount of characters
-            alert("Your search query is too small, try again."); //fix error: closed string
+            alert("Your search query is too small, try again.");
             
             // (DO NOT FIX THE LINE DIRECTLY BELOW)
             searchInput.focus();
@@ -40,7 +39,7 @@
     };
     
     // Finds search matches
-    var search = function(query){  //fix error: added curly bracket
+    var search = function(query){ //fix error: added opeing curly bracket
         
         // split the user's search query string into an array
         var queryArray = query.join(" ");
@@ -67,8 +66,8 @@
                 if(compare !== -1){
                     results.push(db[i]);
                 };
-            }; //fix error: added curly bracket
-        }; //fix error: added curly bracket
+            }; //fix error: added closed curly bracket
+        }; //fix error: added closed curly bracket
         
         results.sort();
         
@@ -124,6 +123,6 @@
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
         return false;
-    }; //fix error: added curly bracket
+    }; //fix error: added closed curl bracket
 
 })();
