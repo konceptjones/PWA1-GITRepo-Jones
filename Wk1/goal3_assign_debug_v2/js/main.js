@@ -11,25 +11,25 @@
 (function(){
     
     // Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
-    var resultsDIV = document.getElementById("results"),
-        searchInput = document.forms[0].search,
-        currentSearch = ''
+    var resultsDIV = document.getElementById("results"),    //variable to get information
+        searchInput = document.forms[0].search,  //search input
+        currentSearch = '' //search result
     ;
     
     // Validates search query
-    var validate = function(query){  //fix error from == to =
+    var validate = function(query){  //fix grammatical error and remove to == to single =
         
         // Trim whitespace from start and end of search query
-        while(query.charAt(0) = " "){
-            query = query.substring(1, query.length);
+        while(query.charAt(0) === " "){  //fix error: convert from single = to comparison ===
+            query = query.substring(1, query.length); //search result
         };
         while(query.charAt(query.length-1) === ""){
-            query = query.substring(0, query.length-1);
-        {;
+            query = query.substring(0, query.length-1); //
+        ;
         
         // Check search length, must have 3 characters
-        if(query.length < 3){}
-            alert("Your search query is too small, try again.);
+        if(query.length < 3){ //validation for set amount of characters
+            alert("Your search query is too small, try again."); //fix error: closed string
             
             // (DO NOT FIX THE LINE DIRECTLY BELOW)
             searchInput.focus();
@@ -40,7 +40,7 @@
     };
     
     // Finds search matches
-    var search = function(query)
+    var search = function(query){  //fix error: added curly bracket
         
         // split the user's search query string into an array
         var queryArray = query.join(" ");
