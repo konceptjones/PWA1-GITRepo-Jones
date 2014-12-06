@@ -14,16 +14,9 @@
     console.log("FIGHT!!!"); // On screen button to start fight
 
     //player name
-    var playerOneName = "Spiderman";   //Name of fighter one "Spiderman"
-    var playerTwoName = "Batman";     //Name of fighter two "batman"
+    var playerOne = [playerOneName:"superman", player1Damage:20, playerOneHealth:100]; //Name of fighter one "Spiderman"
+    var playerTwo = [playerTwoName:"batman", player2Damage:20, playerTwoHealth:100];    //Name of fighter two "batman"
 
-    //player damage
-    var player1Damage = 20;   //player 1 damage
-    var player2Damage = 20;   //player 2 damage
-
-    //player health
-    var playerOneHealth = 100;  //Player one starting health "100%"
-    var playerTwoHealth = 100;  //Player two starting health "100%"
 
     //initiate round 
     var round=0; // this is the start of round one 
