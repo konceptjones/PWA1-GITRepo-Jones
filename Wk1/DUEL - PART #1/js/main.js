@@ -35,10 +35,10 @@
             var f2 = Math.floor(Math.random()*(20-minDamage2)+minDamage2); //calculates the damage of player two.
 
             //inflict damage
-            "Superman"-=f1; //check player one health 
-            "Batman"-=f2; //check player 2 health
+            fighter1[20]-=f1; //check player one health 
+            fighter2[20]-=f2; //check player 2 health
 
-            console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth); //prints on screen the players health
+            console.log(fighter1+": "+playerOneHealth + " " + fighter2+":"+playerTwoHealth); //prints on screen the players health
 
             //check for victor
             var result = winnerCheck();  //variable to check for winner of fight
@@ -58,14 +58,14 @@
 
     function winnerCheck(){   //funrion to check for a winner
         var result="no winner";
-        if (playerOneHealth<1 && playerTwoHealth<1)  //variable to check if both fighers are below the minimum health.
+        if ([20]<1 && [20]<1)  //variable to check if both fighers are below the minimum health.
         {
             result = "You Both Die";  //prints to console the result if both are below the minimum health
-        } else if(playerOneHealth<1){
-            result =playerTwoName+" WINS!!!" //prints to console player 2 result
-        } else if (playerTwoHealth<1)
+        } else if([20]<1){
+            result =fighter1+" WINS!!!" //prints to console player 2 result
+        } else if ([20]<1)
         {
-            result = playerOneName+" WINS!!!"  //prints to console player 1 result
+            result = fighter2+" WINS!!!"  //prints to console player 1 result
         };
        return result;
     };
