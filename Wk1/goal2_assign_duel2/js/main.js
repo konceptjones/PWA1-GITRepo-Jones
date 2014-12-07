@@ -1,11 +1,12 @@
 //Michael Jones
-//December 01, 2014
+//December 05, 2014
+
 /**
  * Duel Fight Game - FINISHED
  * Date: 4/09/13
 
- Assignment 1
- Part 1/3 of series
+ Assignment 2: Duel 2
+ Part 2/3 of series
 */
 
 // self-executing function
