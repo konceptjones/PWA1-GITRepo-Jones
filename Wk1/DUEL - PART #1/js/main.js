@@ -11,29 +11,32 @@
 // self-executing function
 (function(){
 
+    //var fighter1 = ["Spiderman", 20, 100];
+
     console.log("FIGHT!!!"); // On screen button to start fight
 
     //player name
-    var playerOne = [playerOneName:"superman", player1Damage:20, playerOneHealth:100]; //Name of fighter one "Spiderman"
-    var playerTwo = [playerTwoName:"batman", player2Damage:20, playerTwoHealth:100];    //Name of fighter two "batman"
+    var fighter1 = ["Superman", 20, 100];   //Name of fighter one "Spiderman"
+    var fighter2 = ["Batman", 20, 100];     //Name of fighter two "batman"
+
 
 
     //initiate round 
     var round=0; // this is the start of round one 
 
     function fight(){
-        alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth);  //start of fight input plyer name
+        alert("Superman"+":"+[]+"  *START*  "+"Batman"+":"+[]);  //start of fight input plyer name
         for (var i = 0; i < 10; i++)
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
-            var minDamage1 = player1Damage * .5;   //varibale to calculate player one damage 
-            var minDamage2 = player2Damage * .5;   //varibale to calculate player two damage 
-            var f1 = Math.floor(Math.random()*(player1Damage-minDamage1)+minDamage1); //calculates the damage of player one.
-            var f2 = Math.floor(Math.random()*(player2Damage-minDamage2)+minDamage2); //calculates the damage of player two.
+            var minDamage1 = [20] * .5;   //varibale to calculate player one damage 
+            var minDamage2 = [20] * .5;   //varibale to calculate player two damage 
+            var f1 = Math.floor(Math.random()*(20-minDamage1)+minDamage1); //calculates the damage of player one.
+            var f2 = Math.floor(Math.random()*(20-minDamage2)+minDamage2); //calculates the damage of player two.
 
             //inflict damage
-            playerOneHealth-=f1; //check player one health 
-            playerTwoHealth-=f2; //check player 2 health
+            "Superman"-=f1; //check player one health 
+            "Batman"-=f2; //check player 2 health
 
             console.log(playerOneName+": "+playerOneHealth + " " + playerTwoName+":"+playerTwoHealth); //prints on screen the players health
 
