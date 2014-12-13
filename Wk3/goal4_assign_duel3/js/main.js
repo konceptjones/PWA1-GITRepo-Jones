@@ -1,5 +1,5 @@
 //Michael Jones
-//December 12, 2014
+//December 13, 2014
 
 /**
  Assignment 3: Duel 3
@@ -12,8 +12,8 @@
     console.log ("*** Fight  **");
 
 //DOM Pieces Define
-var fighter1_txt = document.querySelector("#ww").querySelector("p"); //fighter one Wonder Woman
-var fighter2_txt = document.querySelector("#bw").querySelector("p"); //fighter two Black Widow
+var fighter1_txt = document.querySelector("#sm").querySelector("p"); //fighter one SuperMan
+var fighter2_txt = document.querySelector("#bm").querySelector("p"); //fighter two BatMan
 var round_txt = document.querySelector("h5"); //pulling info from html
 var button = document.getElementById("fight_btn"); //fight button
 
@@ -26,12 +26,12 @@ button.addEventlistener("click", fight, false);
 //Fighter array documented
 var fighters = [
 {
-    name:"Wonder Woman",
+    name:"Super Man",
     damage:20,
     health:100
 },
 {
-    name:"Black Widow",
+    name:"Batman",
     damage:20,
     health:100
 
@@ -75,11 +75,10 @@ if (results=== "no winner")
 } else{
     fighter1_txt.innerHTML = result;
     fighter2_txt.innerHTML = "";
-}
+};
 
 
 button.removeEventListener("click", fight, false);
-
 
 //button.onclick = "return false";
 document.querySelector('.buttonblue').innerHTML = 'DONE!!!';
@@ -98,9 +97,9 @@ function winnerCheck(){ //function to check for winner
     }     else if (fighters[1].health <1)
     {
     result = fighters[0].name + "WINS!!!"  //fighter one wins
-}
+};
 return results;
-}
+};
 
 
 })();
