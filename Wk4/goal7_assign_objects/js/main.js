@@ -1,5 +1,5 @@
 /**
- * Created by the JavaScript Development Team
+ * Created Michael Jones
  * Class: PWA
  * Goal: Goal7
  */
